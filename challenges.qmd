@@ -1,0 +1,94 @@
+---
+title: "Challenges"
+---
+
+The Leifeld Lab uses **research challenges** as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be **small, concrete, and consequential**: they address real methodological or infrastructural problems linked to the lab's work.
+
+Engagement through challenges serves several purposes:
+
+- it allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;
+- it allows the lab to assess fit and potential before committing to supervision or formal arrangements.
+
+Challenges are not coursework, internships, or unpaid labour. They are **entry points into ongoing research problems**.
+
+---
+
+## The idea behind challenges
+
+### How challenges work
+
+A challenge typically involves:
+
+- a clearly defined methodological or software problem;
+- existing code, data, or papers as context;
+- an expected output (code, documentation, diagnostics, or a short technical note);
+- a limited scope, designed to be tackled independently.
+
+There is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.
+
+What matters is **how you engage with the problem**, not whether you "solve" it perfectly.
+
+---
+
+### What challenges are used for
+
+Sustained engagement with challenges often forms the basis for:
+
+- closer research collaboration;
+- co-authored methodological or applied work;
+- supervision arrangements (e.g., MSc projects, PhD co-supervision);
+- support for applications to externally funded PhD or postdoctoral positions.
+
+---
+
+### What makes a strong challenge contribution
+
+Strong contributions typically show:
+
+- independent problem formulation and scoping;
+- attention to inferential assumptions and edge cases;
+- clean, inspectable code or analysis;
+- clear documentation of decisions and limitations.
+
+Prestige, degrees, or institutional affiliation matter much less than **evidence of careful, sustained engagement**.
+
+---
+
+### How to get started
+
+If you are interested in engaging with a challenge:
+
+1. Browse the lab's software repositories and documentation.
+2. Identify a problem or open issue that aligns with your skills and interests.
+3. Get in touch briefly with a concrete proposal or question.
+
+Unsolicited project proposals are welcome, but they should be **specific and grounded in existing work**.
+
+---
+
+## Current open challenges
+
+### IRT scaling backends for discourse networks
+
+**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
+**Focus:** Analysing the design, feasibility, and validation of a Java implementation of IRT-based scaling for actors and concepts in discourse networks. The challenge centres on understanding data transformations, modelling assumptions, and estimation requirements in existing reference implementations (R and JAGS), and assessing how comparable functionality could be implemented or approximated in DNA's Java codebase. This challenge treats IRT integration as an **inferential and infrastructural design problem**, not as a straightforward feature request. It is motivated by the desire to reduce external dependencies and make scaling methods directly available within DNA.  
+**Typical outputs:** Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.  
+**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/dna/issues/313
+
+---
+
+### Reporting infrastructure and Quarto integration
+
+**Repository:** {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg)  
+**Focus:** Diagnosing the feasibility and design of integrating `Quarto` support into `texreg`, with attention to output contracts, rendering pipelines, and the scope of reporting infrastructure. This challenge builds on prior discussions and unsuccessful partial implementations by contributors and treats `Quarto` integration as a design problem rather than a missing feature. The aim is to clarify what a principled integration would require, where responsibilities should lie (`texreg` vs `Quarto` or extensions), and which trade-offs or limitations are unavoidable.  
+**Typical outputs:** Design notes, architectural analysis of existing attempts, minimal prototypes, or reasoned arguments about why full integration may or may not be desirable.  
+**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/texreg/issues/223
+
+---
+
+### Parliamentary data infrastructure for temporal networks
+**Repository:** {{< bi box >}} [lobbynet](https://github.com/leifeld-lab/lobbynet)  
+**Focus:** Designing and prototyping components of a reproducible pipeline for acquiring, linking, and representing parliamentary lobbying data as temporal relational networks.  
+**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/lobbynet/issues/1
+
+---

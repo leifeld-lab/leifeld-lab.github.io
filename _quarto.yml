@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Leifeld Lab"
+  description: "Statistical inference and infrastructure for dynamic networks"
+  navbar:
+    logo: assets/leifeld-lab.svg
+    left:
+      - text: Home
+        file: index.qmd
+      - text: "{{< bi bar-chart >}} Research"
+        file: research.qmd
+      - text: "{{< bi code >}} Software"
+        file: software.qmd
+      - text: "{{< bi lightning >}} Challenges"
+        file: challenges.qmd
+      - text: "{{< bi people >}} People"
+        file: people.qmd
+  page-footer:
+    left: "© Leifeld Lab · Statistical inference and infrastructure for dynamic networks"
+    right: "Last updated {{< meta date-modified >}}"
+
+format:
+  html:
+    theme: cosmo
+    date-modified: last-modified
+    date-format: "D MMMM YYYY"
+    title-block-style: none
+    css: styles.css
+    toc: false

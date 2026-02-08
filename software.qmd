@@ -1,0 +1,74 @@
+---
+title: "Software"
+---
+
+The Leifeld Lab develops **research software as infrastructure**, not as a by-product of individual papers. Software is treated as an integral part of methodological work: modelling assumptions, measurement decisions, and inferential trade-offs are made explicit in code rather than hidden behind defaults.
+
+Our software projects support **inferentially disciplined research on dynamic relational data**. They prioritise transparency, reproducibility, and explicit handling of temporal dependence, measurement, and uncertainty. Ease of use matters, but not at the expense of methodological clarity.
+
+---
+
+## Flagship infrastructure projects
+
+### {{< bi box >}} DNA --- Discourse Network Analysis
+
+DNA is a software framework for **constructing and analysing discourse networks** based on theory-driven coding of textual material. It is designed to support inferential analysis of the mechanisms guiding policy debate formation, alongside visualisation and descriptive exploration of policy debates.
+
+DNA foregrounds methodological choices that are often implicit in applied work, including:
+
+- how relations are constructed from coded material;
+- how temporal structure and interaction histories are represented;
+- how stages, phases, backbone structures, and polarisation are identified;
+- how coding saturation, redundancy, and measurement uncertainty affect inference.
+
+Text is treated strictly as **measurement infrastructure**. The inferential target is the evolving relational structure and its theoretical interpretation, not language per se.
+
+DNA integrates a range of methods developed or refined in the lab, including phase and stage detection, backbone identification, polarisation measures, saturation diagnostics, and scaling approaches -- often relying on optimisation and structured estimation procedures. Ongoing development focuses on data exchange and representation and the integration of additional estimation procedures implemented in **Java**, alongside a stable **R** interface.
+
+{{< bi file-earmark-text >}} Leifeld, Philip (2017): Discourse Network Analysis: Policy Debates as Dynamic Networks. In: Jennifer N. Victor, Alexander H. Montgomery and Mark N. Lubell (editors): *The Oxford Handbook of Political Networks*. Chapter 12, pages 301--325. Oxford University Press. \[[link](https://doi.org/10.1093/oxfordhb/9780190228217.013.25); [postprint](https://eprints.gla.ac.uk/121525/1/121525.pdf)\]
+
+{{< bi github >}} https://github.com/leifeld-lab/dna
+
+---
+
+### {{< bi box >}} btergm --- Temporal Exponential Random Graph Models
+
+btergm is an R package for estimating temporal exponential random graph models (TERGM) using three approaches: bootstrapped pseudolikelihood (for many networks), MCMC-MLE, and Bayesian estimation (for unbiased estimation when there are few networks). It was developed to address practical and inferential limitations of simulation-based estimation in panel networks, particularly with respect to uncertainty quantification, computational bottlenecks, model comparison, conditionality on past networks via memory specifications, and management of panel network data.
+
+While much of the lab’s current work focuses on event-based and continuous-time representations, btergm remains an important example of the lab's approach to:
+
+- explicit treatment of temporal dependence;
+- careful separation of modelling assumptions from estimation procedures;
+- and software that exposes inferential trade-offs.
+
+{{< bi file-earmark-text >}} Leifeld, Philip, Skyler J. Cranmer and Bruce A. Desmarais (2018): Temporal Exponential Random Graph Models with btergm: Estimation and Bootstrap Confidence Intervals. *Journal of Statistical Software* 83(6): 1--36. \[[link](https://doi.org/10.18637/jss.v083.i06)\]
+
+{{< bi github >}} https://github.com/leifeld-lab/btergm
+
+---
+
+### {{< bi box >}} texreg --- Regression Table Generation
+
+texreg is an R package for generating publication-quality regression tables from statistical models. While general-purpose in scope, it reflects the lab's broader commitment to **transparent reporting and reproducibility**.
+
+The package supports a wide range of model classes and allows users to inspect, customise, and document modelling choices explicitly. It also permits side-by-side comparison of models and collects user impact feedback via an innovative praise function. texreg has been widely adopted across disciplines and industries with millions of installations and is maintained as long-lived infrastructure rather than as a demonstration tool.
+
+{{< bi file-earmark-text >}} Leifeld, Philip (2013): texreg: Conversion of Statistical Model Output in R to LaTeX and HTML Tables. *Journal of Statistical Software* 55(8): 1--24. \[[link](https://doi.org/10.18637/jss.v055.i08)\]
+
+{{< bi github >}} https://github.com/leifeld-lab/texreg
+
+---
+
+## Implementation and performance
+
+A recurring concern across the lab's software projects is the **gap between methodological ambition and computational feasibility**. Where performance, scalability, or numerical stability become limiting factors, methods are implemented in lower-level languages such as **Java** and **C++**, with higher-level interfaces such as **R** used primarily for orchestration and user interaction. We are also increasingly moving away from an overreliance on dependencies to make continuous integration more reliable and durable.
+
+This approach reflects the view that computational considerations are not an afterthought, but an integral part of methodological design. Estimation procedures, diagnostics, and simulation routines are therefore developed with attention to efficiency, memory use, and reproducibility.
+
+---
+
+## Contributing and engagement
+
+Contributions to lab software typically arise through sustained engagement with concrete methodological problems. Prospective contributors are encouraged to consult the {{< bi lightning >}} [Challenges](challenges.qmd) page for specific entry points into ongoing work and to engage with existing code and documentation before proposing new features.
+
+Engagement with these challenges often forms the basis for subsequent collaboration, supervision arrangements, or applications for formal positions.

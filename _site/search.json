@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "The Leifeld Lab develops research software as infrastructure, not as a by-product of individual papers. Software is treated as an integral part of methodological work: modelling assumptions, measurement decisions, and inferential trade-offs are made explicit in code rather than hidden behind defaults.\nOur software projects support inferentially disciplined research on dynamic relational data. They prioritise transparency, reproducibility, and explicit handling of temporal dependence, measurement, and uncertainty. Ease of use matters, but not at the expense of methodological clarity."
+  },
+  {
+    "objectID": "software.html#flagship-infrastructure-projects",
+    "href": "software.html#flagship-infrastructure-projects",
+    "title": "Software",
+    "section": "Flagship infrastructure projects",
+    "text": "Flagship infrastructure projects\n\n DNA — Discourse Network Analysis\nDNA is a software framework for constructing and analysing discourse networks based on theory-driven coding of textual material. It is designed to support inferential analysis of the mechanisms guiding policy debate formation, alongside visualisation and descriptive exploration of policy debates.\nDNA foregrounds methodological choices that are often implicit in applied work, including:\n\nhow relations are constructed from coded material;\nhow temporal structure and interaction histories are represented;\nhow stages, phases, backbone structures, and polarisation are identified;\nhow coding saturation, redundancy, and measurement uncertainty affect inference.\n\nText is treated strictly as measurement infrastructure. The inferential target is the evolving relational structure and its theoretical interpretation, not language per se.\nDNA integrates a range of methods developed or refined in the lab, including phase and stage detection, backbone identification, polarisation measures, saturation diagnostics, and scaling approaches – often relying on optimisation and structured estimation procedures. Ongoing development focuses on data exchange and representation and the integration of additional estimation procedures implemented in Java, alongside a stable R interface.\n Leifeld, Philip (2017): Discourse Network Analysis: Policy Debates as Dynamic Networks. In: Jennifer N. Victor, Alexander H. Montgomery and Mark N. Lubell (editors): The Oxford Handbook of Political Networks. Chapter 12, pages 301–325. Oxford University Press. [link; postprint]\n https://github.com/leifeld-lab/dna\n\n\n\n btergm — Temporal Exponential Random Graph Models\nbtergm is an R package for estimating temporal exponential random graph models (TERGM) using three approaches: bootstrapped pseudolikelihood (for many networks), MCMC-MLE, and Bayesian estimation (for unbiased estimation when there are few networks). It was developed to address practical and inferential limitations of simulation-based estimation in panel networks, particularly with respect to uncertainty quantification, computational bottlenecks, model comparison, conditionality on past networks via memory specifications, and management of panel network data.\nWhile much of the lab’s current work focuses on event-based and continuous-time representations, btergm remains an important example of the lab’s approach to:\n\nexplicit treatment of temporal dependence;\ncareful separation of modelling assumptions from estimation procedures;\nand software that exposes inferential trade-offs.\n\n Leifeld, Philip, Skyler J. Cranmer and Bruce A. Desmarais (2018): Temporal Exponential Random Graph Models with btergm: Estimation and Bootstrap Confidence Intervals. Journal of Statistical Software 83(6): 1–36. [link]\n https://github.com/leifeld-lab/btergm\n\n\n\n texreg — Regression Table Generation\ntexreg is an R package for generating publication-quality regression tables from statistical models. While general-purpose in scope, it reflects the lab’s broader commitment to transparent reporting and reproducibility.\nThe package supports a wide range of model classes and allows users to inspect, customise, and document modelling choices explicitly. It also permits side-by-side comparison of models and collects user impact feedback via an innovative praise function. texreg has been widely adopted across disciplines and industries with millions of installations and is maintained as long-lived infrastructure rather than as a demonstration tool.\n Leifeld, Philip (2013): texreg: Conversion of Statistical Model Output in R to LaTeX and HTML Tables. Journal of Statistical Software 55(8): 1–24. [link]\n https://github.com/leifeld-lab/texreg"
+  },
+  {
+    "objectID": "software.html#implementation-and-performance",
+    "href": "software.html#implementation-and-performance",
+    "title": "Software",
+    "section": "Implementation and performance",
+    "text": "Implementation and performance\nA recurring concern across the lab’s software projects is the gap between methodological ambition and computational feasibility. Where performance, scalability, or numerical stability become limiting factors, methods are implemented in lower-level languages such as Java and C++, with higher-level interfaces such as R used primarily for orchestration and user interaction. We are also increasingly moving away from an overreliance on dependencies to make continuous integration more reliable and durable.\nThis approach reflects the view that computational considerations are not an afterthought, but an integral part of methodological design. Estimation procedures, diagnostics, and simulation routines are therefore developed with attention to efficiency, memory use, and reproducibility."
+  },
+  {
+    "objectID": "software.html#contributing-and-engagement",
+    "href": "software.html#contributing-and-engagement",
+    "title": "Software",
+    "section": "Contributing and engagement",
+    "text": "Contributing and engagement\nContributions to lab software typically arise through sustained engagement with concrete methodological problems. Prospective contributors are encouraged to consult the  Challenges page for specific entry points into ongoing work and to engage with existing code and documentation before proposing new features.\nEngagement with these challenges often forms the basis for subsequent collaboration, supervision arrangements, or applications for formal positions."
+  },
+  {
+    "objectID": "challenges.html",
+    "href": "challenges.html",
+    "title": "Challenges",
+    "section": "",
+    "text": "The Leifeld Lab uses research challenges as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be small, concrete, and consequential: they address real methodological or infrastructural problems linked to the lab’s work.\nEngagement through challenges serves several purposes:\nChallenges are not coursework, internships, or unpaid labour. They are entry points into ongoing research problems."
+  },
+  {
+    "objectID": "challenges.html#the-idea-behind-challenges",
+    "href": "challenges.html#the-idea-behind-challenges",
+    "title": "Challenges",
+    "section": "The idea behind challenges",
+    "text": "The idea behind challenges\n\nHow challenges work\nA challenge typically involves:\n\na clearly defined methodological or software problem;\nexisting code, data, or papers as context;\nan expected output (code, documentation, diagnostics, or a short technical note);\na limited scope, designed to be tackled independently.\n\nThere is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.\nWhat matters is how you engage with the problem, not whether you “solve” it perfectly.\n\n\n\nWhat challenges are used for\nSustained engagement with challenges often forms the basis for:\n\ncloser research collaboration;\nco-authored methodological or applied work;\nsupervision arrangements (e.g., MSc projects, PhD co-supervision);\nsupport for applications to externally funded PhD or postdoctoral positions.\n\n\n\n\nWhat makes a strong challenge contribution\nStrong contributions typically show:\n\nindependent problem formulation and scoping;\nattention to inferential assumptions and edge cases;\nclean, inspectable code or analysis;\nclear documentation of decisions and limitations.\n\nPrestige, degrees, or institutional affiliation matter much less than evidence of careful, sustained engagement.\n\n\n\nHow to get started\nIf you are interested in engaging with a challenge:\n\nBrowse the lab’s software repositories and documentation.\nIdentify a problem or open issue that aligns with your skills and interests.\nGet in touch briefly with a concrete proposal or question.\n\nUnsolicited project proposals are welcome, but they should be specific and grounded in existing work."
+  },
+  {
+    "objectID": "challenges.html#current-open-challenges",
+    "href": "challenges.html#current-open-challenges",
+    "title": "Challenges",
+    "section": "Current open challenges",
+    "text": "Current open challenges\n\nIRT scaling backends for discourse networks\nRepository:  dna\nFocus: Analysing the design, feasibility, and validation of a Java implementation of IRT-based scaling for actors and concepts in discourse networks. The challenge centres on understanding data transformations, modelling assumptions, and estimation requirements in existing reference implementations (R and JAGS), and assessing how comparable functionality could be implemented or approximated in DNA’s Java codebase. This challenge treats IRT integration as an inferential and infrastructural design problem, not as a straightforward feature request. It is motivated by the desire to reduce external dependencies and make scaling methods directly available within DNA.\nTypical outputs: Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.\nEntry point:  https://github.com/leifeld-lab/dna/issues/313\n\n\n\nReporting infrastructure and Quarto integration\nRepository:  texreg\nFocus: Diagnosing the feasibility and design of integrating Quarto support into texreg, with attention to output contracts, rendering pipelines, and the scope of reporting infrastructure. This challenge builds on prior discussions and unsuccessful partial implementations by contributors and treats Quarto integration as a design problem rather than a missing feature. The aim is to clarify what a principled integration would require, where responsibilities should lie (texreg vs Quarto or extensions), and which trade-offs or limitations are unavoidable.\nTypical outputs: Design notes, architectural analysis of existing attempts, minimal prototypes, or reasoned arguments about why full integration may or may not be desirable.\nEntry point:  https://github.com/leifeld-lab/texreg/issues/223\n\n\n\nParliamentary data infrastructure for temporal networks\nRepository:  lobbynet\nFocus: Designing and prototyping components of a reproducible pipeline for acquiring, linking, and representing parliamentary lobbying data as temporal relational networks.\nEntry point:  https://github.com/leifeld-lab/lobbynet/issues/1"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "The Leifeld Lab develops statistical methods and research infrastructure for identifying, estimating, and stress-testing theoretically meaningful mechanisms in dynamic relational data arising from social and political processes. Our work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading.\nWhile much of our applied work is motivated by problems in political science, the lab’s primary contributions are methodological: models, estimators, diagnostics, and software that make inferential assumptions explicit and testable in complex relational settings."
+  },
+  {
+    "objectID": "research.html#mechanisms-in-temporal-interaction-processes",
+    "href": "research.html#mechanisms-in-temporal-interaction-processes",
+    "title": "Research",
+    "section": "Mechanisms in temporal interaction processes",
+    "text": "Mechanisms in temporal interaction processes\nA central theme of the lab’s work is the problem of mechanism separation in temporal network data. In many substantive applications, competing explanations, such as social contagion, prior similarity, strategic coordination, or institutional constraint, generate observationally similar interaction patterns.\nWe develop models and estimators that make these mechanisms explicit and separable, rather than conflating them through summary statistics or reduced-form effects. Recent and ongoing work in this area includes:\n\ndisentangling social contagion from prior similarity in bipartite processes linking actors and behaviour;\njoint modelling of interactions, behaviour, and node-level outcomes, rather than treating them as exogenous or unidirectional;\nidentification strategies that clarify when causal interpretations are (and are not) supported by the data.\n\nRelational event representations are used where appropriate, not as an agenda in themselves, but as a means of preserving theoretically relevant interaction histories."
+  },
+  {
+    "objectID": "research.html#temporal-dependence-decay-and-memory",
+    "href": "research.html#temporal-dependence-decay-and-memory",
+    "title": "Research",
+    "section": "Temporal dependence, decay, and memory",
+    "text": "Temporal dependence, decay, and memory\nA second strand of work addresses how much of the past matters, and how this should be modelled and estimated rather than assumed.\nMany temporal network models fix decay parameters, memory horizons, or time windows a priori, despite these choices having direct inferential consequences. The lab develops approaches that treat temporal dependence as an estimable object, including:\n\nfully Bayesian estimation of temporal decay in panel, ordinal-, and continuous-time interaction processes;\nmodel comparison and selection for competing memory structures;\nsimulation-based diagnostics to assess bias arising from burn-in, truncation, or misspecified temporal dependence.\n\nThis work is closely tied to efficient implementations (e.g. in C++) that make such estimation feasible in practice."
+  },
+  {
+    "objectID": "research.html#measurement-and-identifiability-in-discourse-networks",
+    "href": "research.html#measurement-and-identifiability-in-discourse-networks",
+    "title": "Research",
+    "section": "Measurement and identifiability in discourse networks",
+    "text": "Measurement and identifiability in discourse networks\nA substantial part of the lab’s work is concerned with measurement problems in discourse network data, where relations are constructed through theory-based coding of textual material.\nHere, the inferential challenge is not language modelling, but the construction of relational data that remain interpretable under statistical analysis. Current and recent work includes:\n\nmethods for detecting stages and phases in temporal discourse networks, with implementations integrated into the DNA software;\nthe design and estimation of polarisation measures grounded in political process considerations;\nidentification of backbone structures and redundant concept sets to refine codebooks and reduce inferential noise;\nBayesian discourse network models with explicit treatment of measurement uncertainty, reliability, latent structure, and ideological scaling of actors and concepts, with efficient implementations;\ndevelopment of saturation measures and prediction methods for real-time feedback during qualitative coding, particularly when no prior codebook exists.\n\nTextual material is treated strictly as measurement infrastructure: a vehicle for constructing relational data, not an object of inference in its own right."
+  },
+  {
+    "objectID": "research.html#rethinking-standard-tools-and-practices",
+    "href": "research.html#rethinking-standard-tools-and-practices",
+    "title": "Research",
+    "section": "Rethinking standard tools and practices",
+    "text": "Rethinking standard tools and practices\nSome of the lab’s work revisits widely used methodological tools to clarify their inferential limits.\nExamples include:\n\nextensions of latent space and latent variable models that estimate relational structure jointly with substantively meaningful predictors, rather than conditioning on them;\nstress-testing statistical models for network data using simulations and applications to delineate (and potentially overcome) their limits;\ndeveloping and evaluating data structures for inference with higher-order network representations, motivated by real-data applications.\n\nThis strand of work is motivated by the view that methodological convenience should not substitute for inferential clarity."
+  },
+  {
+    "objectID": "research.html#research-software-as-infrastructure",
+    "href": "research.html#research-software-as-infrastructure",
+    "title": "Research",
+    "section": "Research software as infrastructure",
+    "text": "Research software as infrastructure\nAcross all of these areas, the lab treats software as infrastructure, not as a by-product. Methods are developed alongside implementations that are intended to be reusable, inspectable, and explicit about modelling choices.\nFlagship projects such as  DNA are designed to surface methodological decisions about coding, temporal dependence, and alignment between network representation and policy theory. Methods are useful when they can be used reliably to operationalise theory. This orientation also motivates ongoing work on challenges such as automated annotation pipelines, scalable backends, and integration with external data sources (e.g., parliamentary records) and databases (e.g., knowledge graphs).\nWe also contribute to open science, better reporting, and documentation of software impact, for example through the  texreg package."
+  },
+  {
+    "objectID": "research.html#positioning",
+    "href": "research.html#positioning",
+    "title": "Research",
+    "section": "Positioning",
+    "text": "Positioning\nThe lab is not a general network science group, a text-as-data lab, or a substantively focused policy unit. It is best understood as a methods and infrastructure lab concerned with the inferential consequences of modelling choices in dynamic relational data.\nApplied collaborations play an important role in motivating problems and testing methods, but the lab’s core mission is to advance how inference is done in settings where relations, time, and measurement interact.\nA substantial share of the lab’s published output appears in applied journals, often in political science and adjacent fields. This reflects the role of applied work as a testing ground for methodological ideas: applications are used to surface inferential failures, evaluate modelling assumptions, and motivate the development of new estimators, diagnostics, and software. The lab’s methodological contributions are therefore often embedded in substantive analyses rather than presented as standalone technical papers."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Leifeld Lab",
+    "section": "",
+    "text": "The Leifeld Lab develops methods, models, and open-source software for statistical inference in dynamic relational data arising from social and political processes. The lab’s work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading, or where theory development requires methodological refinement.\nThe lab operates as a methods- and infrastructure-first research group. Applied work serves as an important testing ground for methodological ideas, but the core focus is on inference, measurement, and implementation.\nEngagement with the lab typically develops through sustained work on concrete methodological problems rather than through open-ended recruitment.\n→ See  Challenges for entry points into ongoing work."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "This page lists selected people with past or present formal roles in the lab and/or visible contributions to the lab’s methods and infrastructure."
+  },
+  {
+    "objectID": "people.html#core-members",
+    "href": "people.html#core-members",
+    "title": "People",
+    "section": "Core members",
+    "text": "Core members\n\nPhilip Leifeld — PI — Professor of Social Statistics, University of Manchester\nStatistical inference and methods for dynamic networks and text; research software.\nLinks:  GitHub ·  Website ·  Google Scholar"
+  },
+  {
+    "objectID": "people.html#ongoing-contributors",
+    "href": "people.html#ongoing-contributors",
+    "title": "People",
+    "section": "Ongoing contributors",
+    "text": "Ongoing contributors\n(Previously employed or supervised or collaborating closely on lab-linked infrastructure or methods projects.)\n\nLaurence Brandenberger — Former PhD student (2014-2019) → now Senior Scientist, University of Zurich Contributions to  dna; author of the  rem R package; ongoing methods collaborations.\nPaper outputs:  AJPS, forthcoming ·  PSJ 2022 ·  BJPS 2019\nLinks:  GitHub ·  Website ·  Google Scholar\nTim Henrichsen — Former PhD student/postdoc (2018-2024) → now Research Fellow, Univ. of Birmingham\nContributions to  dna: IRT scaling; rDNA user interface; backbone detection.\nPaper outputs:  backbone working paper ·  R&P 2025 ·  JEPP 2022 ·  Addiction 2020\nLinks:  GitHub ·  Website ·  Google Scholar"
+  },
+  {
+    "objectID": "people.html#alumni-past-contributors",
+    "href": "people.html#alumni-past-contributors",
+    "title": "People",
+    "section": "Alumni & past contributors",
+    "text": "Alumni & past contributors\n(Former members/affiliates/contributors.)\n\nKristijan Garic — Former PhD student (2023-2024) → Survey Data Linkage Officer, ISER, University of Essex\nContributions to  dna: phase detection and frame evolution methods implementation in rDNA.\nPaper outputs:  JCMS, accepted ·  PSJ, forthcoming ·  ER&SS 2025\nLinks:  GitHub ·  Website ·  Google Scholar\nClaudia Zucca — Former postdoc (2018-2019) → now Assistant Professor, JADS & Tilburg University & TU/e\nContributions to  texreg: plotting functionality, praise function, and extraction methods.\nLinks:  GitHub ·  Website ·  Google Scholar\nJohannes Gruber — Former research assistant (2017-2018) → now Team Leader, GESIS\nContributions to  dna: rDNA UI; DNA documentation. Author of  LexisNexisTools and other R packages.\nLinks:  GitHub ·  Website ·  Google Scholar"
+  },
+  {
+    "objectID": "people.html#how-to-be-listed-here",
+    "href": "people.html#how-to-be-listed-here",
+    "title": "People",
+    "section": "How to be listed here",
+    "text": "How to be listed here\nIf you make visible contributions to the lab’s infrastructure through sustained collaboration on lab software, datasets, and/or publications, you may be listed here. Please ask if you would like your entry updated, shortened, or removed."
+  }
+]

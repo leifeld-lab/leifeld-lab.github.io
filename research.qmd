@@ -1,0 +1,85 @@
+---
+title: "Research"
+---
+
+The Leifeld Lab develops **statistical methods and research infrastructure for identifying, estimating, and stress-testing theoretically meaningful mechanisms in dynamic relational data** arising from social and political processes. Our work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading.
+
+While much of our applied work is motivated by problems in political science, the lab's primary contributions are **methodological**: models, estimators, diagnostics, and software that make inferential assumptions explicit and testable in complex relational settings.
+
+---
+
+## Mechanisms in temporal interaction processes
+
+A central theme of the lab's work is the problem of **mechanism separation** in temporal network data. In many substantive applications, competing explanations, such as social contagion, prior similarity, strategic coordination, or institutional constraint, generate observationally similar interaction patterns.
+
+We develop models and estimators that make these mechanisms explicit and separable, rather than conflating them through summary statistics or reduced-form effects. Recent and ongoing work in this area includes:
+
+- disentangling social contagion from prior similarity in bipartite processes linking actors and behaviour;
+- joint modelling of interactions, behaviour, and node-level outcomes, rather than treating them as exogenous or unidirectional;
+- identification strategies that clarify when causal interpretations are (and are not) supported by the data.
+
+Relational event representations are used where appropriate, not as an agenda in themselves, but as a means of preserving theoretically relevant interaction histories.
+
+---
+
+## Temporal dependence, decay, and memory
+
+A second strand of work addresses **how much of the past matters**, and how this should be modelled and estimated rather than assumed.
+
+Many temporal network models fix decay parameters, memory horizons, or time windows a priori, despite these choices having direct inferential consequences. The lab develops approaches that treat temporal dependence as an estimable object, including:
+
+- fully Bayesian estimation of temporal decay in panel, ordinal-, and continuous-time interaction processes;
+- model comparison and selection for competing memory structures;
+- simulation-based diagnostics to assess bias arising from burn-in, truncation, or misspecified temporal dependence.
+
+This work is closely tied to efficient implementations (e.g. in C++) that make such estimation feasible in practice.
+
+---
+
+## Measurement and identifiability in discourse networks
+
+A substantial part of the lab’s work is concerned with **measurement problems in discourse network data**, where relations are constructed through theory-based coding of textual material.
+
+Here, the inferential challenge is not language modelling, but the construction of relational data that remain interpretable under statistical analysis. Current and recent work includes:
+
+- methods for detecting stages and phases in temporal discourse networks, with implementations integrated into the DNA software;
+- the design and estimation of polarisation measures grounded in political process considerations;
+- identification of backbone structures and redundant concept sets to refine codebooks and reduce inferential noise;
+- Bayesian discourse network models with explicit treatment of measurement uncertainty, reliability, latent structure, and ideological scaling of actors and concepts, with efficient implementations;
+- development of saturation measures and prediction methods for real-time feedback during qualitative coding, particularly when no prior codebook exists.
+
+Textual material is treated strictly as **measurement infrastructure**: a vehicle for constructing relational data, not an object of inference in its own right.
+
+---
+
+## Rethinking standard tools and practices
+
+Some of the lab's work revisits widely used methodological tools to clarify their **inferential limits**.
+
+Examples include:
+
+- extensions of latent space and latent variable models that estimate relational structure jointly with substantively meaningful predictors, rather than conditioning on them;
+- stress-testing statistical models for network data using simulations and applications to delineate (and potentially overcome) their limits;
+- developing and evaluating data structures for inference with higher-order network representations, motivated by real-data applications.
+
+This strand of work is motivated by the view that methodological convenience should not substitute for inferential clarity.
+
+---
+
+## Research software as infrastructure
+
+Across all of these areas, the lab treats **software as infrastructure**, not as a by-product. Methods are developed alongside implementations that are intended to be reusable, inspectable, and explicit about modelling choices.
+
+Flagship projects such as {{< bi box >}} [DNA](https://github.com/leifeld-lab/dna) are designed to surface methodological decisions about coding, temporal dependence, and alignment between network representation and policy theory. Methods are useful when they can be used reliably to operationalise theory. This orientation also motivates ongoing work on challenges such as automated annotation pipelines, scalable backends, and integration with external data sources (e.g., parliamentary records) and databases (e.g., knowledge graphs).
+
+We also contribute to open science, better reporting, and documentation of software impact, for example through the {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg) package.
+
+---
+
+## Positioning
+
+The lab is not a general network science group, a text-as-data lab, or a substantively focused policy unit. It is best understood as a **methods and infrastructure lab** concerned with the inferential consequences of modelling choices in dynamic relational data.
+
+Applied collaborations play an important role in motivating problems and testing methods, but the lab’s core mission is to advance **how inference is done** in settings where relations, time, and measurement interact.
+
+A substantial share of the lab’s published output appears in applied journals, often in political science and adjacent fields. This reflects the role of applied work as a testing ground for methodological ideas: applications are used to surface inferential failures, evaluate modelling assumptions, and motivate the development of new estimators, diagnostics, and software. The lab's methodological contributions are therefore often embedded in substantive analyses rather than presented as standalone technical papers.
