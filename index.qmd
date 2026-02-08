@@ -9,3 +9,4 @@ The lab operates as a **methods- and infrastructure-first research group**. Appl
 Engagement with the lab typically develops through sustained work on concrete methodological problems rather than through open-ended recruitment.
 
 → See {{< bi lightning >}} [Challenges](challenges.qmd) for entry points into ongoing work.  
+→ See {{< bi github >}} [Leifeld Lab](https://github.com/leifeld-lab) for a list of repositories.
