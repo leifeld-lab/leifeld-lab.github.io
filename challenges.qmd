@@ -73,7 +73,16 @@ Unsolicited project proposals are welcome, but they should be **specific and gro
 **Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
 **Focus:** Analysing the design, feasibility, and validation of a Java implementation of IRT-based scaling for actors and concepts in discourse networks. The challenge centres on understanding data transformations, modelling assumptions, and estimation requirements in existing reference implementations (R and JAGS), and assessing how comparable functionality could be implemented or approximated in DNA's Java codebase. This challenge treats IRT integration as an **inferential and infrastructural design problem**, not as a straightforward feature request. It is motivated by the desire to reduce external dependencies and make scaling methods directly available within DNA.  
 **Typical outputs:** Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.  
-**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/dna/issues/313
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/313](https://github.com/leifeld-lab/dna/issues/313)
+
+---
+
+### Loyalty and temporal commitment in discourse networks
+
+**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
+**Focus:** Analysing and extending measures of actors' loyalty (or temporal commitment) to policy concepts in discourse networks. The challenge centres on diagnosing the assumptions and limitations of existing loyalty measures that combine frequency and recency using fixed temporal discounting parameters, and exploring whether decay or commitment parameters can be estimated from data rather than fixed a priori. The emphasis is on measurement design, identifiability, and inferential interpretation in temporal bipartite networks.  
+**Typical outputs:** Technical analyses of existing loyalty measures, simulation-based diagnostics of sensitivity to decay or window parameters, alternative formulations or estimators (e.g., Bayesian or optimisation-based), prototype implementations in R or Java, or short technical notes clarifying interpretational and identifiability issues.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/314](https://github.com/leifeld-lab/dna/issues/314)
 
 ---
 
@@ -82,13 +91,13 @@ Unsolicited project proposals are welcome, but they should be **specific and gro
 **Repository:** {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg)  
 **Focus:** Diagnosing the feasibility and design of integrating `Quarto` support into `texreg`, with attention to output contracts, rendering pipelines, and the scope of reporting infrastructure. This challenge builds on prior discussions and unsuccessful partial implementations by contributors and treats `Quarto` integration as a design problem rather than a missing feature. The aim is to clarify what a principled integration would require, where responsibilities should lie (`texreg` vs `Quarto` or extensions), and which trade-offs or limitations are unavoidable.  
 **Typical outputs:** Design notes, architectural analysis of existing attempts, minimal prototypes, or reasoned arguments about why full integration may or may not be desirable.  
-**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/texreg/issues/223
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/texreg/issues/223](https://github.com/leifeld-lab/texreg/issues/223)
 
 ---
 
 ### Parliamentary data infrastructure for temporal networks
 **Repository:** {{< bi box >}} [lobbynet](https://github.com/leifeld-lab/lobbynet)  
 **Focus:** Designing and prototyping components of a reproducible pipeline for acquiring, linking, and representing parliamentary lobbying data as temporal relational networks.  
-**Entry point**: {{< bi arrow-right-circle >}} https://github.com/leifeld-lab/lobbynet/issues/1
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/lobbynet/issues/1](https://github.com/leifeld-lab/lobbynet/issues/1)
 
 ---
