@@ -14,9 +14,13 @@ This page lists selected people with past or present formal roles in the lab and
 
 *(Previously employed or supervised or collaborating closely on lab-linked infrastructure or methods projects.)*
 
+- **Shubhanjay Varma** --- Current PhD student *(since 2025)*, Department of Law, University of Manchester  
+  Contributions to {{< bi box >}} [dna](https://github.com/leifeld-lab/dna); developing NLP and LLM workflows for statement annotation.  
+  Link: {{< bi github >}} [GitHub](https://github.com/Water1ock)
+
 - **Laurence Brandenberger** --- Former PhD student *(2014-2019)* → now Senior Scientist, [University of Zurich  ](https://www.ipz.uzh.ch/en/people/employees/laureb.html)
   Contributions to {{< bi box >}} [dna](https://github.com/leifeld-lab/dna); author of the {{< bi box >}} [rem](https://github.com/brandenberger/rem) R package; ongoing methods collaborations.  
-  Paper outputs: {{< bi file-earmark-text >}} [AJPS, forthcoming](https://doi.org/10.48550/arXiv.1904.05327) · {{< bi file-earmark-text >}} [PSJ 2022](https://doi.org/10.1111/psj.12404) · {{< bi file-earmark-text >}} [BJPS 2019](https://doi.org/10.1017/S0007123417000217)  
+  Paper outputs: {{< bi file-earmark-text >}} [JRSSA, forthcoming](https://doi.org/10.1093/jrsssa/qnag069) · {{< bi file-earmark-text >}} [AJPS, forthcoming](https://doi.org/10.48550/arXiv.1904.05327) · {{< bi file-earmark-text >}} [PSJ 2022](https://doi.org/10.1111/psj.12404) · {{< bi file-earmark-text >}} [BJPS 2019](https://doi.org/10.1017/S0007123417000217)  
   Links: {{< bi github >}} [GitHub](https://github.com/brandenberger) · {{< bi globe >}} [Website](https://brandenbergerlaurence.com/) · {{< bi mortarboard >}} [Google Scholar](https://scholar.google.com/citations?user=XErF7OYAAAAJ)
 
 - **Tim Henrichsen** --- Former PhD student/postdoc *(2018-2024)* → now Research Fellow, [Univ. of Birmingham](https://www.birmingham.ac.uk/staff/profiles/gov/henrichsen-tim)  
@@ -30,7 +34,7 @@ This page lists selected people with past or present formal roles in the lab and
 
 - **Kristijan Garic** --- Former PhD student *(2023-2024)* → Survey Data Linkage Officer, [ISER, University of Essex](https://www.essex.ac.uk/people/GARIC44303/Kristijan-Garic)  
   Contributions to {{< bi box >}} [dna](https://github.com/leifeld-lab/dna): phase detection and frame evolution methods implementation in rDNA.  
-  Paper outputs: {{< bi file-earmark-text >}} JCMS, accepted · {{< bi file-earmark-text >}} [PSJ, forthcoming](http://doi.org/10.1111/psj.70047) · {{< bi file-earmark-text >}} [ER&SS 2025](https://doi.org/10.1016/j.erss.2025.104020)  
+  Paper outputs: {{< bi file-earmark-text >}} [JCMS, forthcoming](https://doi.org/10.1111/jcms.70119) · {{< bi file-earmark-text >}} [PSJ 2026](http://doi.org/10.1111/psj.70047) · {{< bi file-earmark-text >}} [ER&SS 2025](https://doi.org/10.1016/j.erss.2025.104020)  
   Links: {{< bi github >}} [GitHub](https://github.com/Krgaric) · {{< bi globe >}} [Website](https://kristijangaric.com/) · {{< bi mortarboard >}} [Google Scholar](https://scholar.google.com/citations?user=Fd6PiyYAAAAJ)
 
 - **Claudia Zucca** --- Former postdoc *(2018-2019)* → now Assistant Professor, [JADS](https://www.jads.nl/researcher/claudia-zucca/) & [Tilburg University](https://research.tilburguniversity.edu/en/persons/claudia-zucca/) & [TU/e](https://research.tue.nl/en/persons/claudia-zucca/)  

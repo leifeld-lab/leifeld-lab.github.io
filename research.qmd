@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-The Leifeld Lab develops **statistical methods and research infrastructure for identifying, estimating, and stress-testing theoretically meaningful mechanisms in dynamic relational data** arising from social and political processes. Our work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading.
+The Leifeld Lab develops **statistical methods and research infrastructure for identifying, estimating, and examining theoretically meaningful mechanisms in dynamic relational data** arising from social, political, or economic processes. Our work focuses on settings where time, dependence, and measurement interact to produce complex data.
 
 While much of our applied work is motivated by problems in political science, the lab's primary contributions are **methodological**: models, estimators, diagnostics, and software that make inferential assumptions explicit and testable in complex relational settings.
 
@@ -18,7 +18,9 @@ We develop models and estimators that make these mechanisms explicit and separab
 - joint modelling of interactions, behaviour, and node-level outcomes, rather than treating them as exogenous or unidirectional;
 - identification strategies that clarify when causal interpretations are (and are not) supported by the data.
 
-Relational event representations are used where appropriate, not as an agenda in themselves, but as a means of preserving theoretically relevant interaction histories.
+Relational event representations are used where appropriate as a means of preserving theoretically relevant interaction histories.
+
+Example output: {{< bi file-earmark-text >}} [JRSSA, forthcoming](https://doi.org/10.1093/jrsssa/qnag069)
 
 ---
 
@@ -34,6 +36,8 @@ Many temporal network models fix decay parameters, memory horizons, or time wind
 
 This work is closely tied to efficient implementations (e.g. in C++) that make such estimation feasible in practice.
 
+Example output: {{< bi file-earmark-text >}} [CSDA 2026](https://doi.org/10.1016/j.csda.2026.108428)
+
 ---
 
 ## Measurement and identifiability in discourse networks
@@ -48,7 +52,9 @@ Here, the inferential challenge is not language modelling, but the construction 
 - Bayesian discourse network models with explicit treatment of measurement uncertainty, reliability, latent structure, and ideological scaling of actors and concepts, with efficient implementations;
 - development of saturation measures and prediction methods for real-time feedback during qualitative coding, particularly when no prior codebook exists.
 
-Textual material is treated strictly as **measurement infrastructure**: a vehicle for constructing relational data, not an object of inference in its own right.
+Textual material is treated as **measurement infrastructure**: a vehicle for constructing relational data, not an object of inference in its own right.
+
+Example output: {{< bi file-earmark-text >}} [JCMS, forthcoming](https://doi.org/10.1111/jcms.70119)
 
 ---
 
@@ -59,10 +65,12 @@ Some of the lab's work revisits widely used methodological tools to clarify thei
 Examples include:
 
 - extensions of latent space and latent variable models that estimate relational structure jointly with substantively meaningful predictors, rather than conditioning on them;
-- stress-testing statistical models for network data using simulations and applications to delineate (and potentially overcome) their limits;
+- delineating the limits and assumptions of statistical models for network data using simulations and applications;
 - developing and evaluating data structures for inference with higher-order network representations, motivated by real-data applications.
 
 This strand of work is motivated by the view that methodological convenience should not substitute for inferential clarity.
+
+Example output: {{< bi file-earmark-text >}} [Social Networks 2024](https://doi.org/10.1016/j.socnet.2023.11.004)
 
 ---
 

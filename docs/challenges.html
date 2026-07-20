@@ -136,18 +136,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Leifeld Lab uses <strong>research challenges</strong> as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be <strong>small, concrete, and consequential</strong>: they address real methodological or infrastructural problems linked to the lab’s work.</p>
+<p>This page lists open challenges and explains further below what a challenge is and how it works.</p>
+<section id="current-open-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="current-open-challenges">Current open challenges</h2>
+<section id="irt-scaling-backends-for-discourse-networks" class="level3">
+<h3 class="anchored" data-anchor-id="irt-scaling-backends-for-discourse-networks">IRT scaling backends for discourse networks</h3>
+<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna">dna</a><br>
+<strong>Focus:</strong> We have used item response theory (IRT) to scale actors and concepts on an underlying latent ideological dimension. So far, we have employed the <code>MCMCpack</code> R package for binary or ordinal scaling or implemented the model in <code>JAGS</code>, a Bayesian software with R interfaces. Our <code>rDNA</code> package contains wrapper functions for accessing <code>MCMCpack</code>. We would like to move towards a Java implementation of the same model(s) for inclusion directly in the DNA software. Some of the work that we envision for this challenge is to explore whether one should use a binary or ordinal IRT model with discourse network data; if non-statements should be treated as <code>0</code> or <code>NA</code>; prototyping an implementation of one of the techniques in Java; or using MCMC diagnostics to think carefully about what it takes to guarantee estimability and identification and how best to avoid sign-flipping during estimation. You can select from among these problems, and the best way to start is probably just to replicate some of our existing work.<br>
+<strong>Typical outputs:</strong> Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.<br>
+<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna/issues/313">https://github.com/leifeld-lab/dna/issues/313</a></p>
+<hr>
+</section>
+<section id="loyalty-and-temporal-commitment-in-discourse-networks" class="level3">
+<h3 class="anchored" data-anchor-id="loyalty-and-temporal-commitment-in-discourse-networks">Loyalty and temporal commitment in discourse networks</h3>
+<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna">dna</a><br>
+<strong>Focus:</strong> Some work in computer science has proposed measures for analysing actors’ loyalty to groups. This can be directly applied to discourse networks to analyse actors’ loyalty or commitment to concepts, for example to distinguish between types of actors displaying different loyalty or between types of concepts attracting different levels of commitment – potentially with temporal trajectories of loyalty. This challenge consists of thinking through what it would take to apply these measures to discourse networks – and how they could be modified or extended, whether by adding something to the measure (if you are substantively interested), such as making use of signed ties (via the agreement variable), or by approaching the measure as an estimation problem with latent parameters (if you are more statistically inclined).<br>
+<strong>Typical outputs:</strong> Short technical notes describing the measure and how it can be applied to discourse networks; proposed extensions in application to DNA; short reports proposing measurement or estimation approaches; implementation prototypes.<br>
+<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna/issues/314">https://github.com/leifeld-lab/dna/issues/314</a></p>
+<hr>
+</section>
+<section id="reporting-infrastructure-and-quarto-integration" class="level3">
+<h3 class="anchored" data-anchor-id="reporting-infrastructure-and-quarto-integration">Reporting infrastructure and Quarto integration</h3>
+<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/texreg">texreg</a><br>
+<strong>Focus:</strong> The <code>texreg</code> package translates more than 100 statistical models in R into tables in different formats, including LaTeX, HTML, and ASCII text. The <code>knitreg</code> function automatically selects the appropriate output format, including RMarkdown via HTML output. However, users have started noting that support for <code>Quarto</code> is absent. A (now stale) pull request was started by somebody a while ago in the <code>texreg</code> repository, but there is no working solution yet. This challenge consists of exploring what it would take to build Quarto support into <code>texreg</code>. Quarto supports HTML tables, so it is probably just a matter of making the existing <code>texreg</code> table generation system talk to R and selecting the right output format with the right arguments. This challenge seeks to explore how <code>Quarto</code> support would be best added to <code>texreg</code>.<br>
+<strong>Typical outputs:</strong> Pull requests with working <code>Quarto</code> integration into <code>knitreg</code>; design notes on which choices one would be faced with in the implementation; architectural analysis of existing attempts; or reasoned arguments about why <code>Quarto</code> integration may or may not be desirable.<br>
+<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/texreg/issues/223">https://github.com/leifeld-lab/texreg/issues/223</a></p>
+<hr>
+</section>
+<section id="parliamentary-data-infrastructure-for-temporal-networks" class="level3">
+<h3 class="anchored" data-anchor-id="parliamentary-data-infrastructure-for-temporal-networks">Parliamentary data infrastructure for temporal networks</h3>
+<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/lobbynet">lobbynet</a><br>
+<strong>Focus:</strong> The UK parliament and the German parliament have online databases for a) legislators with their biographies and links to organisations, and b) lobbying organisations and their activities and clients. It would be a really interesting data source if we could systematically collect and link the two data sources within each country case. Doing so would permit network analysis of how legislators are connected to the lobbying network. This challenge consists of looking into how this could be best done. For example, what would be a good way to crawl/download/scrape the data? How would we best save them in a graph database or other format? What would be good ways for linking the data, for example by which variables, and how would we do name disambiguation or linkage? How would we best make the data accessible for use? This challenge is a computational social science and data infrastructure problem.<br>
+<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/lobbynet/issues/1">https://github.com/leifeld-lab/lobbynet/issues/1</a></p>
+<hr>
+</section>
+</section>
+<section id="challenges-as-a-gateway-to-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-as-a-gateway-to-collaboration">Challenges as a gateway to collaboration</h2>
+<p>The Leifeld Lab uses research challenges as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be small, concrete, and consequential: They address real methodological or infrastructural problems linked to the lab’s work.</p>
 <p>Engagement through challenges serves several purposes:</p>
 <ul>
-<li>it allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;</li>
-<li>it allows the lab to assess fit and potential before committing to supervision or formal arrangements.</li>
+<li>It allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;</li>
+<li>It allows the lab to assess fit and potential before committing to supervision or formal arrangements.</li>
 </ul>
-<p>Challenges are not coursework, internships, or unpaid labour. They are <strong>entry points into ongoing research problems</strong>.</p>
+<p>Challenges are not coursework, internships, or unpaid labour. They are entry points into ongoing research problems.</p>
 <hr>
-<section id="the-idea-behind-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="the-idea-behind-challenges">The idea behind challenges</h2>
-<section id="how-challenges-work" class="level3">
-<h3 class="anchored" data-anchor-id="how-challenges-work">How challenges work</h3>
+</section>
+<section id="how-challenges-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-challenges-work">How challenges work</h2>
 <p>A challenge typically involves:</p>
 <ul>
 <li>a clearly defined methodological or software problem;</li>
@@ -156,11 +192,11 @@ ul.task-list li input[type="checkbox"] {
 <li>a limited scope, designed to be tackled independently.</li>
 </ul>
 <p>There is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.</p>
-<p>What matters is <strong>how you engage with the problem</strong>, not whether you “solve” it perfectly.</p>
+<p>What matters is how you engage with the problem, not whether you “solve” it perfectly.</p>
 <hr>
 </section>
-<section id="what-challenges-are-used-for" class="level3">
-<h3 class="anchored" data-anchor-id="what-challenges-are-used-for">What challenges are used for</h3>
+<section id="what-challenges-are-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-challenges-are-used-for">What challenges are used for</h2>
 <p>Sustained engagement with challenges often forms the basis for:</p>
 <ul>
 <li>closer research collaboration;</li>
@@ -170,8 +206,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <hr>
 </section>
-<section id="what-makes-a-strong-challenge-contribution" class="level3">
-<h3 class="anchored" data-anchor-id="what-makes-a-strong-challenge-contribution">What makes a strong challenge contribution</h3>
+<section id="what-makes-a-strong-challenge-contribution" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-a-strong-challenge-contribution">What makes a strong challenge contribution</h2>
 <p>Strong contributions typically show:</p>
 <ul>
 <li>independent problem formulation and scoping;</li>
@@ -179,56 +215,21 @@ ul.task-list li input[type="checkbox"] {
 <li>clean, inspectable code or analysis;</li>
 <li>clear documentation of decisions and limitations.</li>
 </ul>
-<p>Prestige, degrees, or institutional affiliation matter much less than <strong>evidence of careful, sustained engagement</strong>.</p>
 <hr>
 </section>
-<section id="how-to-get-started" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-get-started">How to get started</h3>
+<section id="how-to-get-started" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-get-started">How to get started</h2>
 <p>If you are interested in engaging with a challenge:</p>
 <ol type="1">
 <li>Browse the lab’s software repositories and documentation.</li>
 <li>Identify a problem or open issue that aligns with your skills and interests.</li>
-<li>Get in touch briefly with a concrete proposal or question.</li>
+<li>Get to work, and let your creativity flow.</li>
+<li>If you have questions or want to get informal feedback, post them in the corresponding issue.</li>
 </ol>
-<p>Unsolicited project proposals are welcome, but they should be <strong>specific and grounded in existing work</strong>.</p>
-<hr>
-</section>
-</section>
-<section id="current-open-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="current-open-challenges">Current open challenges</h2>
-<section id="irt-scaling-backends-for-discourse-networks" class="level3">
-<h3 class="anchored" data-anchor-id="irt-scaling-backends-for-discourse-networks">IRT scaling backends for discourse networks</h3>
-<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna">dna</a><br>
-<strong>Focus:</strong> Analysing the design, feasibility, and validation of a Java implementation of IRT-based scaling for actors and concepts in discourse networks. The challenge centres on understanding data transformations, modelling assumptions, and estimation requirements in existing reference implementations (R and JAGS), and assessing how comparable functionality could be implemented or approximated in DNA’s Java codebase. This challenge treats IRT integration as an <strong>inferential and infrastructural design problem</strong>, not as a straightforward feature request. It is motivated by the desire to reduce external dependencies and make scaling methods directly available within DNA.<br>
-<strong>Typical outputs:</strong> Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.<br>
-<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna/issues/313">https://github.com/leifeld-lab/dna/issues/313</a></p>
-<hr>
-</section>
-<section id="loyalty-and-temporal-commitment-in-discourse-networks" class="level3">
-<h3 class="anchored" data-anchor-id="loyalty-and-temporal-commitment-in-discourse-networks">Loyalty and temporal commitment in discourse networks</h3>
-<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna">dna</a><br>
-<strong>Focus:</strong> Analysing and extending measures of actors’ loyalty (or temporal commitment) to policy concepts in discourse networks. The challenge centres on diagnosing the assumptions and limitations of existing loyalty measures that combine frequency and recency using fixed temporal discounting parameters, and exploring whether decay or commitment parameters can be estimated from data rather than fixed a priori. The emphasis is on measurement design, identifiability, and inferential interpretation in temporal bipartite networks.<br>
-<strong>Typical outputs:</strong> Technical analyses of existing loyalty measures, simulation-based diagnostics of sensitivity to decay or window parameters, alternative formulations or estimators (e.g., Bayesian or optimisation-based), prototype implementations in R or Java, or short technical notes clarifying interpretational and identifiability issues.<br>
-<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna/issues/314">https://github.com/leifeld-lab/dna/issues/314</a></p>
-<hr>
-</section>
-<section id="reporting-infrastructure-and-quarto-integration" class="level3">
-<h3 class="anchored" data-anchor-id="reporting-infrastructure-and-quarto-integration">Reporting infrastructure and Quarto integration</h3>
-<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/texreg">texreg</a><br>
-<strong>Focus:</strong> Diagnosing the feasibility and design of integrating <code>Quarto</code> support into <code>texreg</code>, with attention to output contracts, rendering pipelines, and the scope of reporting infrastructure. This challenge builds on prior discussions and unsuccessful partial implementations by contributors and treats <code>Quarto</code> integration as a design problem rather than a missing feature. The aim is to clarify what a principled integration would require, where responsibilities should lie (<code>texreg</code> vs <code>Quarto</code> or extensions), and which trade-offs or limitations are unavoidable.<br>
-<strong>Typical outputs:</strong> Design notes, architectural analysis of existing attempts, minimal prototypes, or reasoned arguments about why full integration may or may not be desirable.<br>
-<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/texreg/issues/223">https://github.com/leifeld-lab/texreg/issues/223</a></p>
-<hr>
-</section>
-<section id="parliamentary-data-infrastructure-for-temporal-networks" class="level3">
-<h3 class="anchored" data-anchor-id="parliamentary-data-infrastructure-for-temporal-networks">Parliamentary data infrastructure for temporal networks</h3>
-<p><strong>Repository:</strong> <i class="bi-box " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/lobbynet">lobbynet</a><br>
-<strong>Focus:</strong> Designing and prototyping components of a reproducible pipeline for acquiring, linking, and representing parliamentary lobbying data as temporal relational networks.<br>
-<strong>Entry point</strong>: <i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/lobbynet/issues/1">https://github.com/leifeld-lab/lobbynet/issues/1</a></p>
+<p>Unsolicited project proposals are welcome, but they should be specific and grounded in existing work.</p>
 <hr>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -642,7 +643,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Last updated 9 February 2026</p>
+<p>Last updated 20 July 2026</p>
 </div>
   </div>
 </footer>

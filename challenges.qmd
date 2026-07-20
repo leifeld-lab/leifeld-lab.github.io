@@ -2,20 +2,58 @@
 title: "Challenges"
 ---
 
-The Leifeld Lab uses **research challenges** as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be **small, concrete, and consequential**: they address real methodological or infrastructural problems linked to the lab's work.
+This page lists open challenges and explains further below what a challenge is and how it works.
 
-Engagement through challenges serves several purposes:
+## Current open challenges
 
-- it allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;
-- it allows the lab to assess fit and potential before committing to supervision or formal arrangements.
+### IRT scaling backends for discourse networks
 
-Challenges are not coursework, internships, or unpaid labour. They are **entry points into ongoing research problems**.
+**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
+**Focus:** We have used item response theory (IRT) to scale actors and concepts on an underlying latent ideological dimension. So far, we have employed the `MCMCpack` R package for binary or ordinal scaling or implemented the model in `JAGS`, a Bayesian software with R interfaces. Our `rDNA` package contains wrapper functions for accessing `MCMCpack`. We would like to move towards a Java implementation of the same model(s) for inclusion directly in the DNA software. Some of the work that we envision for this challenge is to explore whether one should use a binary or ordinal IRT model with discourse network data; if non-statements should be treated as `0` or `NA`; prototyping an implementation of one of the techniques in Java; or using MCMC diagnostics to think carefully about what it takes to guarantee estimability and identification and how best to avoid sign-flipping during estimation. You can select from among these problems, and the best way to start is probably just to replicate some of our existing work.  
+**Typical outputs:** Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/313](https://github.com/leifeld-lab/dna/issues/313)
 
 ---
 
-## The idea behind challenges
+### Loyalty and temporal commitment in discourse networks
 
-### How challenges work
+**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
+**Focus:** Some work in computer science has proposed measures for analysing actors' loyalty to groups. This can be directly applied to discourse networks to analyse actors' loyalty or commitment to concepts, for example to distinguish between types of actors displaying different loyalty or between types of concepts attracting different levels of commitment -- potentially with temporal trajectories of loyalty. This challenge consists of thinking through what it would take to apply these measures to discourse networks -- and how they could be modified or extended, whether by adding something to the measure (if you are substantively interested), such as making use of signed ties (via the agreement variable), or by approaching the measure as an estimation problem with latent parameters (if you are more statistically inclined).  
+**Typical outputs:** Short technical notes describing the measure and how it can be applied to discourse networks; proposed extensions in application to DNA; short reports proposing measurement or estimation approaches; implementation prototypes.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/314](https://github.com/leifeld-lab/dna/issues/314)
+
+---
+
+### Reporting infrastructure and Quarto integration
+
+**Repository:** {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg)  
+**Focus:** The `texreg` package translates more than 100 statistical models in R into tables in different formats, including LaTeX, HTML, and ASCII text. The `knitreg` function automatically selects the appropriate output format, including RMarkdown via HTML output. However, users have started noting that support for `Quarto` is absent. A (now stale) pull request was started by somebody a while ago in the `texreg` repository, but there is no working solution yet. This challenge consists of exploring what it would take to build Quarto support into `texreg`. Quarto supports HTML tables, so it is probably just a matter of making the existing `texreg` table generation system talk to R and selecting the right output format with the right arguments. This challenge seeks to explore how `Quarto` support would be best added to `texreg`.  
+**Typical outputs:** Pull requests with working `Quarto` integration into `knitreg`; design notes on which choices one would be faced with in the implementation; architectural analysis of existing attempts; or reasoned arguments about why `Quarto` integration may or may not be desirable.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/texreg/issues/223](https://github.com/leifeld-lab/texreg/issues/223)
+
+---
+
+### Parliamentary data infrastructure for temporal networks
+**Repository:** {{< bi box >}} [lobbynet](https://github.com/leifeld-lab/lobbynet)  
+**Focus:** The UK parliament and the German parliament have online databases for a) legislators with their biographies and links to organisations, and b) lobbying organisations and their activities and clients. It would be a really interesting data source if we could systematically collect and link the two data sources within each country case. Doing so would permit network analysis of how legislators are connected to the lobbying network. This challenge consists of looking into how this could be best done. For example, what would be a good way to crawl/download/scrape the data? How would we best save them in a graph database or other format? What would be good ways for linking the data, for example by which variables, and how would we do name disambiguation or linkage? How would we best make the data accessible for use? This challenge is a computational social science and data infrastructure problem.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/lobbynet/issues/1](https://github.com/leifeld-lab/lobbynet/issues/1)
+
+---
+
+## Challenges as a gateway to collaboration
+
+The Leifeld Lab uses research challenges as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be small, concrete, and consequential: They address real methodological or infrastructural problems linked to the lab's work.
+
+Engagement through challenges serves several purposes:
+
+- It allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;
+- It allows the lab to assess fit and potential before committing to supervision or formal arrangements.
+
+Challenges are not coursework, internships, or unpaid labour. They are entry points into ongoing research problems.
+
+---
+
+## How challenges work
 
 A challenge typically involves:
 
@@ -26,11 +64,11 @@ A challenge typically involves:
 
 There is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.
 
-What matters is **how you engage with the problem**, not whether you "solve" it perfectly.
+What matters is how you engage with the problem, not whether you "solve" it perfectly.
 
 ---
 
-### What challenges are used for
+## What challenges are used for
 
 Sustained engagement with challenges often forms the basis for:
 
@@ -41,7 +79,7 @@ Sustained engagement with challenges often forms the basis for:
 
 ---
 
-### What makes a strong challenge contribution
+## What makes a strong challenge contribution
 
 Strong contributions typically show:
 
@@ -50,54 +88,17 @@ Strong contributions typically show:
 - clean, inspectable code or analysis;
 - clear documentation of decisions and limitations.
 
-Prestige, degrees, or institutional affiliation matter much less than **evidence of careful, sustained engagement**.
-
 ---
 
-### How to get started
+## How to get started
 
 If you are interested in engaging with a challenge:
 
 1. Browse the lab's software repositories and documentation.
 2. Identify a problem or open issue that aligns with your skills and interests.
-3. Get in touch briefly with a concrete proposal or question.
+3. Get to work, and let your creativity flow.
+4. If you have questions or want to get informal feedback, post them in the corresponding issue.
 
-Unsolicited project proposals are welcome, but they should be **specific and grounded in existing work**.
-
----
-
-## Current open challenges
-
-### IRT scaling backends for discourse networks
-
-**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
-**Focus:** Analysing the design, feasibility, and validation of a Java implementation of IRT-based scaling for actors and concepts in discourse networks. The challenge centres on understanding data transformations, modelling assumptions, and estimation requirements in existing reference implementations (R and JAGS), and assessing how comparable functionality could be implemented or approximated in DNA's Java codebase. This challenge treats IRT integration as an **inferential and infrastructural design problem**, not as a straightforward feature request. It is motivated by the desire to reduce external dependencies and make scaling methods directly available within DNA.  
-**Typical outputs:** Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.  
-**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/313](https://github.com/leifeld-lab/dna/issues/313)
-
----
-
-### Loyalty and temporal commitment in discourse networks
-
-**Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
-**Focus:** Analysing and extending measures of actors' loyalty (or temporal commitment) to policy concepts in discourse networks. The challenge centres on diagnosing the assumptions and limitations of existing loyalty measures that combine frequency and recency using fixed temporal discounting parameters, and exploring whether decay or commitment parameters can be estimated from data rather than fixed a priori. The emphasis is on measurement design, identifiability, and inferential interpretation in temporal bipartite networks.  
-**Typical outputs:** Technical analyses of existing loyalty measures, simulation-based diagnostics of sensitivity to decay or window parameters, alternative formulations or estimators (e.g., Bayesian or optimisation-based), prototype implementations in R or Java, or short technical notes clarifying interpretational and identifiability issues.  
-**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/dna/issues/314](https://github.com/leifeld-lab/dna/issues/314)
-
----
-
-### Reporting infrastructure and Quarto integration
-
-**Repository:** {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg)  
-**Focus:** Diagnosing the feasibility and design of integrating `Quarto` support into `texreg`, with attention to output contracts, rendering pipelines, and the scope of reporting infrastructure. This challenge builds on prior discussions and unsuccessful partial implementations by contributors and treats `Quarto` integration as a design problem rather than a missing feature. The aim is to clarify what a principled integration would require, where responsibilities should lie (`texreg` vs `Quarto` or extensions), and which trade-offs or limitations are unavoidable.  
-**Typical outputs:** Design notes, architectural analysis of existing attempts, minimal prototypes, or reasoned arguments about why full integration may or may not be desirable.  
-**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/texreg/issues/223](https://github.com/leifeld-lab/texreg/issues/223)
-
----
-
-### Parliamentary data infrastructure for temporal networks
-**Repository:** {{< bi box >}} [lobbynet](https://github.com/leifeld-lab/lobbynet)  
-**Focus:** Designing and prototyping components of a reproducible pipeline for acquiring, linking, and representing parliamentary lobbying data as temporal relational networks.  
-**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/lobbynet/issues/1](https://github.com/leifeld-lab/lobbynet/issues/1)
+Unsolicited project proposals are welcome, but they should be specific and grounded in existing work.
 
 ---

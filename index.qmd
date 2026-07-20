@@ -2,7 +2,7 @@
 title: "Leifeld Lab"
 ---
 
-The Leifeld Lab develops methods, models, and open-source software for **statistical inference in dynamic relational data** arising from social and political processes. The lab's work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading, or where theory development requires methodological refinement.
+The Leifeld Lab develops methods, models, and open-source software for **statistical inference in dynamic relational data** arising from social, political, or economic processes. The lab's work focuses on settings where time, dependence, and measurement interact in ways that make standard network methods unreliable or misleading, or where theory development requires methodological refinement.
 
 The lab operates as a **methods- and infrastructure-first research group**. Applied work serves as an important testing ground for methodological ideas, but the core focus is on inference, measurement, and implementation.
 
