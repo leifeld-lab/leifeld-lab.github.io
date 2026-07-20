@@ -35,18 +35,46 @@
     "text": "This page lists open challenges and explains further below what a challenge is and how it works."
   },
   {
-    "objectID": "challenges.html#the-idea-behind-challenges",
-    "href": "challenges.html#the-idea-behind-challenges",
-    "title": "Challenges",
-    "section": "The idea behind challenges",
-    "text": "The idea behind challenges\n\nHow challenges work\nA challenge typically involves:\n\na clearly defined methodological or software problem;\nexisting code, data, or papers as context;\nan expected output (code, documentation, diagnostics, or a short technical note);\na limited scope, designed to be tackled independently.\n\nThere is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.\nWhat matters is how you engage with the problem, not whether you “solve” it perfectly.\n\n\n\nWhat challenges are used for\nSustained engagement with challenges often forms the basis for:\n\ncloser research collaboration;\nco-authored methodological or applied work;\nsupervision arrangements (e.g., MSc projects, PhD co-supervision);\nsupport for applications to externally funded PhD or postdoctoral positions.\n\n\n\n\nWhat makes a strong challenge contribution\nStrong contributions typically show:\n\nindependent problem formulation and scoping;\nattention to inferential assumptions and edge cases;\nclean, inspectable code or analysis;\nclear documentation of decisions and limitations.\n\nPrestige, degrees, or institutional affiliation matter much less than evidence of careful, sustained engagement.\n\n\n\nHow to get started\nIf you are interested in engaging with a challenge:\n\nBrowse the lab’s software repositories and documentation.\nIdentify a problem or open issue that aligns with your skills and interests.\nGet in touch briefly with a concrete proposal or question.\n\nUnsolicited project proposals are welcome, but they should be specific and grounded in existing work."
-  },
-  {
     "objectID": "challenges.html#current-open-challenges",
     "href": "challenges.html#current-open-challenges",
     "title": "Challenges",
     "section": "Current open challenges",
     "text": "Current open challenges\n\nIRT scaling backends for discourse networks\nRepository:  dna\nFocus: We have used item response theory (IRT) to scale actors and concepts on an underlying latent ideological dimension. So far, we have employed the MCMCpack R package for binary or ordinal scaling or implemented the model in JAGS, a Bayesian software with R interfaces. Our rDNA package contains wrapper functions for accessing MCMCpack. We would like to move towards a Java implementation of the same model(s) for inclusion directly in the DNA software. Some of the work that we envision for this challenge is to explore whether one should use a binary or ordinal IRT model with discourse network data; if non-statements should be treated as 0 or NA; prototyping an implementation of one of the techniques in Java; or using MCMC diagnostics to think carefully about what it takes to guarantee estimability and identification and how best to avoid sign-flipping during estimation. You can select from among these problems, and the best way to start is probably just to replicate some of our existing work.\nTypical outputs: Technical problem descriptions, design notes, standalone Java prototypes for MCMC estimation, replication or stress-testing of published results, or diagnostic analyses of convergence, identifiability, and estimation behaviour.\nEntry point:  https://github.com/leifeld-lab/dna/issues/313\n\n\n\nLoyalty and temporal commitment in discourse networks\nRepository:  dna\nFocus: Some work in computer science has proposed measures for analysing actors’ loyalty to groups. This can be directly applied to discourse networks to analyse actors’ loyalty or commitment to concepts, for example to distinguish between types of actors displaying different loyalty or between types of concepts attracting different levels of commitment – potentially with temporal trajectories of loyalty. This challenge consists of thinking through what it would take to apply these measures to discourse networks – and how they could be modified or extended, whether by adding something to the measure (if you are substantively interested), such as making use of signed ties (via the agreement variable), or by approaching the measure as an estimation problem with latent parameters (if you are more statistically inclined).\nTypical outputs: Short technical notes describing the measure and how it can be applied to discourse networks; proposed extensions in application to DNA; short reports proposing measurement or estimation approaches; implementation prototypes.\nEntry point:  https://github.com/leifeld-lab/dna/issues/314\n\n\n\nReporting infrastructure and Quarto integration\nRepository:  texreg\nFocus: The texreg package translates more than 100 statistical models in R into tables in different formats, including LaTeX, HTML, and ASCII text. The knitreg function automatically selects the appropriate output format, including RMarkdown via HTML output. However, users have started noting that support for Quarto is absent. A (now stale) pull request was started by somebody a while ago in the texreg repository, but there is no working solution yet. This challenge consists of exploring what it would take to build Quarto support into texreg. Quarto supports HTML tables, so it is probably just a matter of making the existing texreg table generation system talk to R and selecting the right output format with the right arguments. This challenge seeks to explore how Quarto support would be best added to texreg.\nTypical outputs: Pull requests with working Quarto integration into knitreg; design notes on which choices one would be faced with in the implementation; architectural analysis of existing attempts; or reasoned arguments about why Quarto integration may or may not be desirable.\nEntry point:  https://github.com/leifeld-lab/texreg/issues/223\n\n\n\nParliamentary data infrastructure for temporal networks\nRepository:  lobbynet\nFocus: The UK parliament and the German parliament have online databases for a) legislators with their biographies and links to organisations, and b) lobbying organisations and their activities and clients. It would be a really interesting data source if we could systematically collect and link the two data sources within each country case. Doing so would permit network analysis of how legislators are connected to the lobbying network. This challenge consists of looking into how this could be best done. For example, what would be a good way to crawl/download/scrape the data? How would we best save them in a graph database or other format? What would be good ways for linking the data, for example by which variables, and how would we do name disambiguation or linkage? How would we best make the data accessible for use? This challenge is a computational social science and data infrastructure problem.\nEntry point:  https://github.com/leifeld-lab/lobbynet/issues/1"
+  },
+  {
+    "objectID": "challenges.html#challenges-as-a-gateway-to-collaboration",
+    "href": "challenges.html#challenges-as-a-gateway-to-collaboration",
+    "title": "Challenges",
+    "section": "Challenges as a gateway to collaboration",
+    "text": "Challenges as a gateway to collaboration\nThe Leifeld Lab uses research challenges as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be small, concrete, and consequential: They address real methodological or infrastructural problems linked to the lab’s work.\nEngagement through challenges serves several purposes:\n\nIt allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;\nIt allows the lab to assess fit and potential before committing to supervision or formal arrangements.\n\nChallenges are not coursework, internships, or unpaid labour. They are entry points into ongoing research problems."
+  },
+  {
+    "objectID": "challenges.html#how-challenges-work",
+    "href": "challenges.html#how-challenges-work",
+    "title": "Challenges",
+    "section": "How challenges work",
+    "text": "How challenges work\nA challenge typically involves:\n\na clearly defined methodological or software problem;\nexisting code, data, or papers as context;\nan expected output (code, documentation, diagnostics, or a short technical note);\na limited scope, designed to be tackled independently.\n\nThere is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.\nWhat matters is how you engage with the problem, not whether you “solve” it perfectly."
+  },
+  {
+    "objectID": "challenges.html#what-challenges-are-used-for",
+    "href": "challenges.html#what-challenges-are-used-for",
+    "title": "Challenges",
+    "section": "What challenges are used for",
+    "text": "What challenges are used for\nSustained engagement with challenges often forms the basis for:\n\ncloser research collaboration;\nco-authored methodological or applied work;\nsupervision arrangements (e.g., MSc projects, PhD co-supervision);\nsupport for applications to externally funded PhD or postdoctoral positions."
+  },
+  {
+    "objectID": "challenges.html#what-makes-a-strong-challenge-contribution",
+    "href": "challenges.html#what-makes-a-strong-challenge-contribution",
+    "title": "Challenges",
+    "section": "What makes a strong challenge contribution",
+    "text": "What makes a strong challenge contribution\nStrong contributions typically show:\n\nindependent problem formulation and scoping;\nattention to inferential assumptions and edge cases;\nclean, inspectable code or analysis;\nclear documentation of decisions and limitations."
+  },
+  {
+    "objectID": "challenges.html#how-to-get-started",
+    "href": "challenges.html#how-to-get-started",
+    "title": "Challenges",
+    "section": "How to get started",
+    "text": "How to get started\nIf you are interested in engaging with a challenge:\n\nBrowse the lab’s software repositories and documentation.\nIdentify a problem or open issue that aligns with your skills and interests.\nGet to work, and let your creativity flow.\nIf you have questions or want to get informal feedback, post them in the corresponding issue.\n\nUnsolicited project proposals are welcome, but they should be specific and grounded in existing work."
   },
   {
     "objectID": "research.html",
@@ -138,40 +166,5 @@
     "title": "People",
     "section": "How to be listed here",
     "text": "How to be listed here\nIf you make visible contributions to the lab’s infrastructure through sustained collaboration on lab software, datasets, and/or publications, you may be listed here. Please ask if you would like your entry updated, shortened, or removed."
-  },
-  {
-    "objectID": "challenges.html#challenges-as-a-gateway-to-collaboration",
-    "href": "challenges.html#challenges-as-a-gateway-to-collaboration",
-    "title": "Challenges",
-    "section": "Challenges as a gateway to collaboration",
-    "text": "Challenges as a gateway to collaboration\nThe Leifeld Lab uses research challenges as a structured way to explore collaboration, supervision, and formal roles. Challenges are designed to be small, concrete, and consequential: They address real methodological or infrastructural problems linked to the lab’s work.\nEngagement through challenges serves several purposes:\n\nIt allows prospective collaborators to demonstrate technical skill, judgment, and follow-through on real problems;\nIt allows the lab to assess fit and potential before committing to supervision or formal arrangements.\n\nChallenges are not coursework, internships, or unpaid labour. They are entry points into ongoing research problems."
-  },
-  {
-    "objectID": "challenges.html#how-challenges-work",
-    "href": "challenges.html#how-challenges-work",
-    "title": "Challenges",
-    "section": "How challenges work",
-    "text": "How challenges work\nA challenge typically involves:\n\na clearly defined methodological or software problem;\nexisting code, data, or papers as context;\nan expected output (code, documentation, diagnostics, or a short technical note);\na limited scope, designed to be tackled independently.\n\nThere is no fixed timeline. Some challenges can be explored in days, others may take weeks. Not all attempts lead to further collaboration, and completion does not guarantee a formal position.\nWhat matters is how you engage with the problem, not whether you “solve” it perfectly."
-  },
-  {
-    "objectID": "challenges.html#what-challenges-are-used-for",
-    "href": "challenges.html#what-challenges-are-used-for",
-    "title": "Challenges",
-    "section": "What challenges are used for",
-    "text": "What challenges are used for\nSustained engagement with challenges often forms the basis for:\n\ncloser research collaboration;\nco-authored methodological or applied work;\nsupervision arrangements (e.g., MSc projects, PhD co-supervision);\nsupport for applications to externally funded PhD or postdoctoral positions."
-  },
-  {
-    "objectID": "challenges.html#what-makes-a-strong-challenge-contribution",
-    "href": "challenges.html#what-makes-a-strong-challenge-contribution",
-    "title": "Challenges",
-    "section": "What makes a strong challenge contribution",
-    "text": "What makes a strong challenge contribution\nStrong contributions typically show:\n\nindependent problem formulation and scoping;\nattention to inferential assumptions and edge cases;\nclean, inspectable code or analysis;\nclear documentation of decisions and limitations."
-  },
-  {
-    "objectID": "challenges.html#how-to-get-started",
-    "href": "challenges.html#how-to-get-started",
-    "title": "Challenges",
-    "section": "How to get started",
-    "text": "How to get started\nIf you are interested in engaging with a challenge:\n\nBrowse the lab’s software repositories and documentation.\nIdentify a problem or open issue that aligns with your skills and interests.\nGet to work, and let your creativity flow.\nIf you have questions or want to get informal feedback, post them in the corresponding issue.\n\nUnsolicited project proposals are welcome, but they should be specific and grounded in existing work."
   }
 ]
