@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Software – Leifeld Lab</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,15 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-97c9a053b936443f2f61382b20864562.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f5dccb698bc95529646339e65e772a8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -141,8 +146,8 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="flagship-infrastructure-projects" class="level2">
 <h2 class="anchored" data-anchor-id="flagship-infrastructure-projects">Flagship infrastructure projects</h2>
-<section id="dna-discourse-network-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="dna-discourse-network-analysis"><i class="bi-box " style="" role="img" aria-hidden="true"></i> DNA — Discourse Network Analysis</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-dna-discourse-network-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-dna-discourse-network-analysis"><i class="bi-box " style="" role="img" aria-hidden="true"></i> DNA — Discourse Network Analysis</h3>
 <p>DNA is a software framework for <strong>constructing and analysing discourse networks</strong> based on theory-driven coding of textual material. It is designed to support inferential analysis of the mechanisms guiding policy debate formation, alongside visualisation and descriptive exploration of policy debates.</p>
 <p>DNA foregrounds methodological choices that are often implicit in applied work, including:</p>
 <ul>
@@ -157,8 +162,8 @@ ul.task-list li input[type="checkbox"] {
 <p><i class="bi-github " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/dna">https://github.com/leifeld-lab/dna</a></p>
 <hr>
 </section>
-<section id="btergm-temporal-exponential-random-graph-models" class="level3">
-<h3 class="anchored" data-anchor-id="btergm-temporal-exponential-random-graph-models"><i class="bi-box " style="" role="img" aria-hidden="true"></i> btergm — Temporal Exponential Random Graph Models</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-btergm-temporal-exponential-random-graph-models" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-btergm-temporal-exponential-random-graph-models"><i class="bi-box " style="" role="img" aria-hidden="true"></i> btergm — Temporal Exponential Random Graph Models</h3>
 <p>btergm is an R package for estimating temporal exponential random graph models (TERGM) using three approaches: bootstrapped pseudolikelihood (for many networks), MCMC-MLE, and Bayesian estimation (for unbiased estimation when there are few networks). It was developed to address practical and inferential limitations of simulation-based estimation in panel networks, particularly with respect to uncertainty quantification, computational bottlenecks, model comparison, conditionality on past networks via memory specifications, and management of panel network data.</p>
 <p>While much of the lab’s current work focuses on event-based and continuous-time representations, btergm remains an important example of the lab’s approach to:</p>
 <ul>
@@ -170,8 +175,8 @@ ul.task-list li input[type="checkbox"] {
 <p><i class="bi-github " style="" role="img" aria-hidden="true"></i> <a href="https://github.com/leifeld-lab/btergm">https://github.com/leifeld-lab/btergm</a></p>
 <hr>
 </section>
-<section id="texreg-regression-table-generation" class="level3">
-<h3 class="anchored" data-anchor-id="texreg-regression-table-generation"><i class="bi-box " style="" role="img" aria-hidden="true"></i> texreg — Regression Table Generation</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-texreg-regression-table-generation" class="level3">
+<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20626920626f78203e7d7d-texreg-regression-table-generation"><i class="bi-box " style="" role="img" aria-hidden="true"></i> texreg — Regression Table Generation</h3>
 <p>texreg is an R package for generating publication-quality regression tables from statistical models. While general-purpose in scope, it reflects the lab’s broader commitment to <strong>transparent reporting and reproducibility</strong>.</p>
 <p>The package supports a wide range of model classes and allows users to inspect, customise, and document modelling choices explicitly. It also permits side-by-side comparison of models and collects user impact feedback via an innovative praise function. texreg has been widely adopted across disciplines and industries with millions of installations and is maintained as long-lived infrastructure rather than as a demonstration tool.</p>
 <p><i class="bi-file-earmark-text " style="" role="img" aria-hidden="true"></i> Leifeld, Philip (2013): texreg: Conversion of Statistical Model Output in R to LaTeX and HTML Tables. <em>Journal of Statistical Software</em> 55(8): 1–24. [<a href="https://doi.org/10.18637/jss.v055.i08">link</a>]</p>
@@ -604,7 +609,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Last updated 9 February 2026</p>
+<p>Last updated 16 August 2026</p>
 </div>
   </div>
 </footer>

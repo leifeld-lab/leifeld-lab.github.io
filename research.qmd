@@ -54,7 +54,7 @@ Here, the inferential challenge is not language modelling, but the construction 
 
 Textual material is treated as **measurement infrastructure**: a vehicle for constructing relational data, not an object of inference in its own right.
 
-Example output: {{< bi file-earmark-text >}} [JCMS, forthcoming](https://doi.org/10.1111/jcms.70119)
+Example output: {{< bi file-earmark-text >}} [JCMS 2026](https://doi.org/10.1111/jcms.70119)
 
 ---
 
