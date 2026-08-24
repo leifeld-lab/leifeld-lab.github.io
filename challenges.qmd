@@ -24,15 +24,6 @@ This page lists open challenges and explains further below what a challenge is a
 
 ---
 
-### Reporting infrastructure and Quarto integration
-
-**Repository:** {{< bi box >}} [texreg](https://github.com/leifeld-lab/texreg)  
-**Focus:** The `texreg` package translates more than 100 statistical models in R into tables in different formats, including LaTeX, HTML, and ASCII text. The `knitreg` function automatically selects the appropriate output format, including RMarkdown via HTML output. However, users have started noting that support for `Quarto` is absent. A (now stale) pull request was started by somebody a while ago in the `texreg` repository, but there is no working solution yet. This challenge consists of exploring what it would take to build Quarto support into `texreg`. Quarto supports HTML tables, so it is probably just a matter of making the existing `texreg` table generation system talk to R and selecting the right output format with the right arguments. This challenge seeks to explore how `Quarto` support would be best added to `texreg`.  
-**Typical outputs:** Pull requests with working `Quarto` integration into `knitreg`; design notes on which choices one would be faced with in the implementation; architectural analysis of existing attempts; or reasoned arguments about why `Quarto` integration may or may not be desirable.  
-**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/texreg/issues/223](https://github.com/leifeld-lab/texreg/issues/223)
-
----
-
 ### Parliamentary data infrastructure for temporal networks
 **Repository:** {{< bi box >}} [lobbynet](https://github.com/leifeld-lab/lobbynet)  
 **Focus:** The UK parliament and the German parliament have online databases for a) legislators with their biographies and links to organisations, and b) lobbying organisations and their activities and clients. It would be a really interesting data source if we could systematically collect and link the two data sources within each country case. Doing so would permit network analysis of how legislators are connected to the lobbying network. This challenge consists of looking into how this could be best done. For example, what would be a good way to crawl/download/scrape the data? How would we best save them in a graph database or other format? What would be good ways for linking the data, for example by which variables, and how would we do name disambiguation or linkage? How would we best make the data accessible for use? This challenge is a computational social science and data infrastructure problem.  
