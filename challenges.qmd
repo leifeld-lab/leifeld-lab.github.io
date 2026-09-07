@@ -6,6 +6,14 @@ This page lists open challenges and explains further below what a challenge is a
 
 ## Current open challenges
 
+### Identification of causal mechanisms in temporal networks
+**Repository:** {{< bi box >}} [networkmechanisms](https://github.com/leifeld-lab/networkmechanisms)  
+**Focus:** The recent paper by {{< bi file-earmark-text >}} Leifeld and Brandenberger (2026) in the *Journal of the Royal Statistical Society Series A* suggested procedures to disentangle social influence / social contagion from a competing causal mechanism called prior similarity in bipartite sequences of actors choosing behaviours. However, the method requires fairly strict assumptions; a range of other competing mechanisms may act as confounders if present; it's unclear how the approach would translate to other data contexts or models; we haven't explored Bayesian methods including Bayes factors and posterior distributions to assess the evidence; we haven't scrutinised the literature on causal inference to see if other existing methods could achieve similar or better results; and it's an open question if other competing mechanisms can be identified in similar ways and what assumptions that would require. In this challenge, you will read the Leifeld and Brandenberger paper carefully, enumerate competing mechanisms, and then contribute to the identification challenge via a short technical note on one of the sub-questions outlined here. For instance, if you are an expert on a particular data structure, model, or method, think about how this may translate into your domain and write a short note about it; partial analyses of the problem are welcome.  
+**Typical outputs:** A short technical note of 2&ndash;4 pages discussing an aspect of this research agenda and engaging with the JRSSA paper, ideally making actionable suggestions for further research steps.  
+**Entry point**: {{< bi arrow-right-circle >}} [https://github.com/leifeld-lab/networkmechanisms/issues/1](https://github.com/leifeld-lab/networkmechanisms/issues/1)
+
+---
+
 ### IRT scaling backends for discourse networks
 
 **Repository:** {{< bi box >}} [dna](https://github.com/leifeld-lab/dna)  
